@@ -1,0 +1,257 @@
+BEGIN;
+CREATE TABLE IF NOT EXISTS Movies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    rating INTEGER,
+    actors TEXT,	
+    trailer_link TEXT,
+    reviews TEXT,
+    reviews_list TEXT
+);
+
+CREATE TABLE IF NOT EXISTS ImportedMovies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    rating INTEGER,
+    movie_info TEXT,
+    trailers TEXT
+);
+
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Inception (2010)", 88,
+    "Leonardo DiCaprio,Joseph Gordon-Levitt,Ellen Page,Tom Hardy,Ken Watanabe,Marion Cotillard",
+    "https://www.youtube.com/watch?v=YoHD9XEInc0,https://www.youtube.com/watch?v=8hP9D6kZseM",
+    "https://www.imdb.com/title/tt1375666/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "The Ninth Gate (1999)", 67,
+    "Johnny Depp,Frank Langella,Lena Olin,Emmanuelle Seigner,Barbara Jefford, Jack Taylor",
+    "https://www.youtube.com/watch?v=IKc1n-nIIx0,https://www.youtube.com/watch?v=V1ueyfoNTdU",
+    "https://www.imdb.com/title/tt0142688/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES ("Room 1408 (2007)", 68, 
+"John Cusack,Samuel L. Jackson,Mary McCormack,Tony Shalhoub,Len Cariou,Walter Lewis", "https://www.youtube.com/watch?v=WIASqPZqnhs", "https://www.imdb.com/title/tt0450385/reviews");
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews) 
+VALUES ("Me Before You (2016)", 74, 
+"Emilia Clarke,Sam Claflin,Janet McTeer,Charles Dance,Vanessa Kirby,Samantha Spiro",
+"https://www.youtube.com/watch?v=T0MmkG_nG1U,https://www.youtube.com/watch?v=J-lcPRmI6jY", 
+"https://www.imdb.com/title/tt2674426/reviews");
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "The Shawshank Redemption (1994)", 93,
+    "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler, Clancy Brown, Gil Bellows",
+    "https://www.youtube.com/watch?v=6hB3S9bIaco,https://www.youtube.com/watch?v=K_tLp7T6U1c",
+    "https://www.imdb.com/title/tt0111161/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Pulp Fiction (1994)", 89,
+    "John Travolta, Uma Thurman, Samuel L. Jackson, Bruce Willis, Ving Rhames, Tim Roth",
+    "https://www.youtube.com/watch?v=s7EdQ4FqbhY,https://www.youtube.com/watch?v=wZBfmBvvotE",
+    "https://www.imdb.com/title/tt0110912/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews) 
+VALUES ("Before Sunrise (1995)", 81, 
+"Ethan Hawke,Julie Delpy,Andrea Eckert,Hanno Pöschl,Karl Bruckschwaiger", 
+"https://www.youtube.com/watch?v=9v6X-Dytlko", 
+"https://www.imdb.com/title/tt0112471/reviews");
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "The Dark Knight (2008)", 90,
+    "Christian Bale,Heath Ledger,Aaron Eckhart,Michael Caine,Maggie Gyllenhaal,Gary Oldman",
+    "https://www.youtube.com/watch?v=EXeTwQWrcwY,https://www.youtube.com/watch?v=yQ5U8suTUw0",
+    "https://www.imdb.com/title/tt0468569/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Fight Club (1999)", 88,
+    "Brad Pitt,Edward Norton,Helena Bonham Carter,Meat Loaf,Zach Grenier,Jared Leto",
+    "https://www.youtube.com/watch?v=SUXWAEX2jlg,https://www.youtube.com/watch?v=O1nDozs-LxI",
+    "https://www.imdb.com/title/tt0137523/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Seven (1995)", 86,
+    "Morgan Freeman, Brad Pitt, Kevin Spacey, Gwyneth Paltrow, R. Lee Ermey, John C. McGinley",
+    "https://www.youtube.com/watch?v=SpKbZ_3zlb0,https://www.youtube.com/watch?v=2BDbMRGVL3M",
+    "https://www.imdb.com/title/tt0114369/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Gone Girl (2014)", 87,
+    "Ben Affleck, Rosamund Pike, Neil Patrick Harris, Tyler Perry, Carrie Coon, Kim Dickens",
+    "https://www.youtube.com/watch?v=2-_-1nJf8Vg,https://www.youtube.com/watch?v=Ym3LB0lOJ0o",
+    "https://www.imdb.com/title/tt2267998/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Chocolat (2000)", 73,
+    "Juliette Binoche, Judi Dench, Alfred Molina, Lena Olin, Johnny Depp, Carrie-Anne Moss",
+    "https://www.youtube.com/watch?v=692hOJq1KJE,https://www.youtube.com/watch?v=32x33l2sLe8",
+    "https://www.imdb.com/title/tt0241303/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "The Map of Tiny Perfect Things (2021)", 68,
+    "Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo",
+    "https://www.youtube.com/watch?v=ZOxsfKQWrUg",
+    "https://www.imdb.com/title/tt11080108/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Memento (2000)", 84,
+    "Guy Pearce, Carrie-Anne Moss, Joe Pantoliano, Mark Boone Junior, Russ Fega, Jorja Fox",
+    "https://www.youtube.com/watch?v=0vS0E9bBSL0",
+    "https://www.imdb.com/title/tt0209144/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "A Cure for Wellness (2016)", 64,
+    "Dane DeHaan, Jason Isaacs, Mia Goth, Adrian Schiller, Celia Imrie, Harry Groener",
+    "https://www.youtube.com/watch?v=JF1rLFCdewU,https://www.youtube.com/watch?v=YVwQNDS-Zes",
+    "https://www.imdb.com/title/tt4731136/reviews/?ref_=tt_ql_2"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Shutter Island (2010)", 82,
+    "Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley, Emily Mortimer, Michelle Williams, Max von Sydow",
+    "https://www.youtube.com/watch?v=5iaYLCiq5RM",
+    "https://www.imdb.com/title/tt1130884/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Eternal Sunshine of the Spotless Mind (2004)", 83,
+    "Jim Carrey, Kate Winslet, Elijah Wood, Mark Ruffalo, Kirsten Dunst, Tom Wilkinson",
+    "https://www.youtube.com/watch?v=0zFywiAh7N0",
+    "https://www.imdb.com/title/tt0338013/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Daisy Jones & The Six (2023)", 81,
+    "Riley Keough, Sam Claflin, Camila Morrone, Nabiyah Be, Suki Waterhouse",
+    "https://www.youtube.com/watch?v=kSrcNCGMrLc,https://www.youtube.com/watch?v=dEG_jhYWclM,https://www.youtube.com/watch?v=9jEYA5JSyw4",
+    "https://www.imdb.com/title/tt8749198/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Charlie and the Chocolate Factory (2005)", 67,
+    "Johnny Depp, Freddie Highmore, David Kelly, Helena Bonham Carter, Noah Taylor, Missi Pyle",
+    "https://www.youtube.com/watch?v=OFVGCUIXJls,https://www.youtube.com/watch?v=p6JAQ2aoXm0",
+    "https://www.imdb.com/title/tt0367594/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Donnie Darko (2001)", 83,
+    "Jake Gyllenhaal, Jena Malone, Mary McDonnell, Holmes Osborne, Maggie Gyllenhaal, Patrick Swayze",
+    "https://www.youtube.com/watch?v=bzLn8sYeM9o",
+    "https://www.imdb.com/title/tt0246578/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "The Holiday (2006)", 69,
+    "Cameron Diaz, Kate Winslet, Jude Law, Jack Black, Eli Wallach, Edward Burns",
+    "https://www.youtube.com/watch?v=wk9caHO3pW0,https://www.youtube.com/watch?v=IJXiU4W_2YM",
+    "https://www.imdb.com/title/tt0066921/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Purple Noon (1960)", 77,
+    "Alain Delon, Maurice Ronet, Marie Laforêt, Erno Crisa, Frank Latimore, Billy Kearns",
+    "https://www.youtube.com/watch?v=hdQZXUOHGMs,https://www.youtube.com/watch?v=tWnvLNTzt-k",
+    "https://www.imdb.com/title/tt0457939/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "The Silence of the Lambs (1991)", 86,
+    "Jodie Foster, Anthony Hopkins, Scott Glenn, Ted Levine, Anthony Heald, Brooke Smith",
+    "https://www.youtube.com/watch?v=6iB21hsprAQ",
+    "https://www.imdb.com/title/tt0102926/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "The Game (1997)", 77,
+    "Michael Douglas, Sean Penn, Deborah Kara Unger, James Rebhorn, Peter Donat, Carroll Baker",
+    "https://www.youtube.com/watch?v=nsKdR05ZsGE,https://www.youtube.com/watch?v=dXBUdCvqpNg",
+    "https://www.imdb.com/title/tt0119174/reviews/"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Cube (1997)", 71,
+    "Nicole de Boer, Nicky Guadagni, David Hewlett, Andrew Miller, Julian Richings, Wayne Robson",
+    "https://www.youtube.com/watch?v=Esjc0rPj3K4",
+    "https://www.imdb.com/title/tt0123755/reviews/"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Backpackers (2022)", 58,
+    "Stephanie Cayo,Maxi Iglesias,Wendy Ramos",
+    "https://www.youtube.com/watch?v=PF1PTgKWzg4",
+    "https://www.imdb.com/title/tt14404596/reviews/"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "The Secret of Happiness (2018)", 75,
+    "Theo Marton,Irina Velcescu,Vlad Zamfirescu",
+    "https://www.youtube.com/watch?v=Udp_s9k_i3w",
+    "https://www.imdb.com/title/tt7205778/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Midnight Sun (2018)", 66,
+    "Bella Thorne,Patrick Schwarzenegger,Rob Riggle,Quinn Shephard",
+    "https://www.youtube.com/watch?v=fEskVQgtwaI",
+    "https://www.imdb.com/title/tt4799066/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Gerald's Game (2017)", 65,
+    "Carla Gugino,Bruce Greenwood,Chiara Aurelia,Carel Struycken",
+    "https://www.youtube.com/watch?v=OMJaeI0eocw",
+    "https://www.imdb.com/title/tt3748172/reviews"
+);
+
+INSERT INTO Movies (title, rating, actors, trailer_link, reviews)
+VALUES (
+    "Tau (2018)", 58,
+    "Maika Monroe,Ed Skrein,Gary Oldman,Paul Leonard Murray",
+    "https://www.youtube.com/watch?v=h9nrBkQ2YBo",
+    "https://www.imdb.com/title/tt4357394/reviews/"
+);
+
+
+COMMIT;
+
+
+
